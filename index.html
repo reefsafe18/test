@@ -1,652 +1,798 @@
 <!DOCTYPE html>
 <html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-	
-	<meta name="naver-site-verification" content="9b68a1ce3d3943a7028dfdcff8507b3e9ed8c1ce" />
-	
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	
+		<meta name="naver-site-verification" content="9b68a1ce3d3943a7028dfdcff8507b3e9ed8c1ce" />
 
-<link rel="icon" href="favicon.ico" type="image/x-icon"  />
-	
-    <title>명품 관상 테스트</title>
-	
-   <link rel="stylesheet" href="style.css">
-	
-   <style type="text/css">
-         @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-      
-      </style>
-   
-   
-       <style type="text/css">
-         @import 
-   url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
 
-   </style>
-	
-	
-	
-	
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-145482737-6');
-    </script>
-</head>
+		<title>명품 관상 테스트</title>
 
-<body>
-    <nav class="p-3 container navbar navbar-bg-light navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="https://put          on .site/">Masterpiece_test</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">동물상 테스트
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item active" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '상단 메뉴'});">
-                    <a class="nav-link" id="yotube-top-link" href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">조코딩 유튜브 채널</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="section">
-        <h1 class="title">인공지능 명품 테스트</h1>
-        <h2 class="subtitle">내가 명품 브랜드의 앰버서더가 된다면?</h2>
-      <section class="Afew">
-         <div class="container mt-5 Afew-cover d-flex flex-row-reverse bd-highlight">
-            
-            <a href="" class="Afew-link">By Afew</a>
-   
-         </div>
-        
-      </section>
-    
-    </section>
-    
-    <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
-   
-    <section class="d-flex justify-content-center">
-        <p class="d-flex align-items-center pr-3">여자</p>
-        <div>
-            <input type="checkbox" id="gender">
-            <label for="gender">
-                <span class="knob">
-                    <i></i>
-                </span>
-            </label>
-        </div>
-        <p class="d-flex align-items-center pl-3">남자</p>
-    </section>
-   
-    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <div class="mt-3 container file-upload">
-        <div class="image-upload-wrap" style="
-                                   width: 65%;
-                                   margin: 0 auto;">
-            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-            <div class="drag-text">
-                <img src="img/picture.jpg" class="mt-5 pt-5 upload">
-                <h3 class="mb-5 pb-5 pt-4  upload-text">(사진첨부)</h3>
-            <h4 class="explain">*사진은 어디에도 저장되지않습니다.*</h4>
-         </div>
-        </div>
-        <div class="file-upload-content">
-            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-            <div id="loading" class="animated bounce">
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">로딩</span>
-                </div>
-                <p class="text-center">인공지능이 명품을 고르는 중입니다.</p>
-            </div>
-            <p class="result-message"></p>
-            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+		<link rel="stylesheet" href="style.css" />
 
-            <div class="pt-3 image-title-wrap">
-                <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
-                    <span class="try-again-text">다른 사진으로 재시도</span>
-                </button>
-            </div>
-        </div>
-    </div>
-    
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+		</style>
+
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+		</style>
+
+		<script
+			type="text/javascript"
+			src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"
+		></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'UA-145482737-6');
+		</script>
+	</head>
+
+	<body>
+		<nav class="p-3 container navbar navbar-bg-light navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="https://put          on .site/">Masterpiece_test</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"
+							>동물상 테스트
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li
+						class="nav-item active"
+						onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '상단 메뉴'});"
+					>
+						<a
+							class="nav-link"
+							id="yotube-top-link"
+							href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg"
+							>조코딩 유튜브 채널</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="section">
+			<h1 class="title">인공지능 명품 테스트</h1>
+			<h2 class="subtitle">내가 명품 브랜드의 앰버서더가 된다면?</h2>
+			<section class="Afew">
+				<div class="container mt-5 Afew-cover d-flex flex-row-reverse bd-highlight">
+					<a href="" class="Afew-link">By Afew</a>
+				</div>
+			</section>
+		</section>
+
+		<h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
+
+		<section class="d-flex justify-content-center">
+			<p class="d-flex align-items-center pr-3">여자</p>
+			<div>
+				<input type="checkbox" id="gender" />
+				<label for="gender">
+					<span class="knob">
+						<i></i>
+					</span>
+				</label>
+			</div>
+			<p class="d-flex align-items-center pl-3">남자</p>
+		</section>
+
+		<script
+			class="jsbin"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+		></script>
+		<div class="mt-3 container file-upload">
+			<div class="image-upload-wrap" style="width: 65%; margin: 0 auto;">
+				<input
+					class="file-upload-input"
+					type="file"
+					onchange="readURL(this);"
+					accept="image/*"
+				/>
+				<div class="drag-text">
+					<img src="img/picture.jpg" class="mt-5 pt-5 upload" />
+					<h3 class="mb-5 pb-5 pt-4 upload-text">(사진첨부)</h3>
+					<h4 class="explain">*사진은 어디에도 저장되지않습니다.*</h4>
+				</div>
+			</div>
+			<div class="file-upload-content">
+				<img class="file-upload-image" id="face-image" src="#" alt="your image" />
+				
+				<div id="loading" class="animated bounce">
+					<div class="spinner-border" role="status">
+						<span class="sr-only">로딩</span>
+					</div>
+					<p class="text-center">인공지능이 명품을 고르는 중입니다.</p>
+				</div>
+				<p class="result-message"></p>
+				<div id="label-container" class="d-flex flex-column justify-content-around"></div>
+				<div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+				<div class="pt-3 image-title-wrap">
+					<button
+						type="button p-2"
+						class="try-again-btn"
+						onclick="gaReload1();"
+						data-toggle="modal"
+						data-target="#adModal"
+					>
+						<span class="try-again-text">다른 사진으로 재시도</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="mt-2 container d-flex justify-content-center ad-banner1">
+			<ins
+				class="kakao_ad_area"
+				style="display: none;"
+				data-ad-unit="DAN-6uhrvzjJtF0nqkig"
+				data-ad-width="320"
+				data-ad-height="100"
+			></ins>
+			<script
+				type="text/javascript"
+				src="//t1.daumcdn.net/kas/static/ba.min.js"
+				async
+			></script>
+		</div>
+
+		<div class="mt-2 container d-flex justify-content-center ad-banner2">
+			<ins
+				class="kakao_ad_area"
+				style="display: none;"
+				data-ad-unit="DAN-eYJK767qqic8MHMl"
+				data-ad-width="300"
+				data-ad-height="250"
+			></ins>
+		</div>
+
+		<div>
+			<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    
-    <div class="container pt-3">
-        
-    </div>
-     
-    
-      <section id="yotube-bottom-link" class="mt-2 d-flex flex-column justify-content-center align-items-center" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '하단 광고'});">
-       
+    <section id="yotube-bottom-link" class="mt-2 d-flex flex-column justify-content-center align-items-center" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '하단 광고'});">
+        <!-- <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="d-flex flex-column justify-content-center align-items-center">
+            <img class="ad-banner"src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdHfMHS%2FbtqDfCJdLpH%2F6xKAC0w10kTrGjhll02SOK%2Fimg.jpg" alt="조코딩 유튜브 홍보"/>
+            <span>이런 앱을 직접 만들어보고 싶지 않으신가요? 조코딩 채널을 구독해보세요!</span>
+        </a> -->
         <iframe width="320" height="180" src="https://www.youtube.com/embed/s6SITKSN9Q0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg"class="linklink">제작도움 유튜브 조코딩 바로가기 Click!</a>
-   
-       
+        <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">조코딩 유튜브 바로가기!</a>
+    </section>
+			
+		</div>
 
-       <div style =" padding: 50px">
-       <a href="mailto:reefsafe18@gmail.com" class="makerlink" >개발자 문의</a>
-         
-        </div>
-    <footer class="footer pt-5 container d-flex justify-content-center">
+		<div class="mt-2 container d-flex justify-content-center ad-banner3">
+			<ins
+				class="kakao_ad_area"
+				style="display: none;"
+				data-ad-unit="DAN-g4vPrFZCBGfy1QMD"
+				data-ad-width="320"
+				data-ad-height="100"
+			></ins>
+			<script
+				type="text/javascript"
+				src="//t1.daumcdn.net/kas/static/ba.min.js"
+				async
+			></script>
+		</div>
 
-   
-   <p>&copy; Masterpiece_Ambassador 2021</p>
-   
-   </footer>
+		<div class="mt-2 container d-flex justify-content-center" style="padding: 50px;">
+			<a href="mailto:reefsafe18@gmail.com" class="makerlink">개발자 문의</a>
+		</div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="adModalLabel">팝업</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body d-flex justify-content-center">
-                    <!-- ad area -->
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
-                        <span class="try-again-text">다른 사진으로 재시도</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        function gaReload1() {
-            gtag('event', '다른 사진으로 재시도 1차', {
-                'event_category': '다른 사진으로 재시도'
-            });
-        }
-        function gaReload2() {
-            gtag('event', '다른 사진으로 재시도 2차', {
-                'event_category': '다른 사진으로 재시도'
-            });
-            window.location.reload();
-        }
-    </script>
-    <script>
-        (function() {
-        var d = document,
-            s = d.createElement('script');
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the
-       
-    </noscript>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-    <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('.image-upload-wrap').hide();
-                    $('#loading').show();
-                    $('.file-upload-image').attr('src', e.target.result);
-                    $('.file-upload-content').show();
-                    $('.image-title').html(input.files[0].name);
-                };
-                reader.readAsDataURL(input.files[0]);
-                init().then(function() {
-                    console.log("hello");
-                    predict();
-                    $('#loading').hide();
-                });
-            } else {
-                removeUpload();
-            }
-        }
+		<footer>
+			<div>
+				<p>&copy; Masterpiece_Ambassador 2021</p>
+			</div>
+		</footer>
 
-        function removeUpload() {
-            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-            $('.file-upload-content').hide();
-            $('.image-upload-wrap').show();
-        }
-        $('.image-upload-wrap').bind('dragover', function() {
-            $('.image-upload-wrap').addClass('image-dropping');
-        });
-        $('.image-upload-wrap').bind('dragleave', function() {
-            $('.image-upload-wrap').removeClass('image-dropping');
-        });
-    </script>
-    <script type="text/javascript">
-        let URL;
-        const urlMale = "https://teachablemachine.withgoogle.com/models/2fJNB90BJ/";
-        const urlFemale = "https://teachablemachine.withgoogle.com/models/9N6DXEPmG/";
-        let model, webcam, labelContainer, maxPredictions;
-        async function init() {
-            if (document.getElementById("gender").checked) {
-                URL = urlMale;
-            } else {
-                URL = urlFemale;
-            }
-            const modelURL = URL + "model.json";
-            const metadataURL = URL + "metadata.json";
-            model = await tmImage.load(modelURL, metadataURL);
-            maxPredictions = model.getTotalClasses();
-            labelContainer = document.getElementById("label-container");
-            for (let i = 0; i < maxPredictions; i++) {
-                var element = document.createElement("div")
-                element.classList.add("d-flex");
-                labelContainer.appendChild(element);
-            }
-        }
-        async function predict() {
-            var image = document.getElementById("face-image")
-            const prediction = await model.predict(image, false);
-            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability)); prediction[0,1,2]
-            console.log(prediction[0].className);
-         
-            var resultTitle, resultimage , resultExplain, resultExplain2 , resultbirth, resultSource;
-         
-            if (document.getElementById("gender").checked) {
-                gtag('event', '명품 테스트 수행', {
-                    'event_category': '명품 테스트 수행',
-                    'event_label': '남자'
-                });
-                switch (prediction[0].className) {
-                    case "dior":
-                        resultTitle = "Dior 디올"  
-                  
-                        resultimage = "<img src='img/dior.jpg'>"
-                  resultbirth = "프랑스 명품 브랜드/1947 설립/설립자:크리스챤 디올"
-                  
-               
-                  
-                        resultExplain = "디올은 프랑스 국민의 '자존심'을 상징하는 프랑스의 명품 브랜드이며 설명이 필요 없는 최고의 화려함 지니고 있는 브랜드입니다."
-                  
-                  resultExplain2= "당신은 어디에서나 당신의 사교성과 적응력으로 주위를 기쁘게하는 능력이 있습니다. 뛰어나지만 겸손을 잃지 않는 순수함으로 사람들에게 좋은 평가를 받는 당신은 디올의 앰버서더이자 인간 디올입니다."
-                  
-                  resultSource= '<a href="http://www.dazedkorea.com/fashion/article/1183/detail.do">인간 디올 세훈 공식 화보. dazedkorea</a>'
-                  
-                  gtag('event', '남자 결과 Dior', {'event_category': '남자 결과'});
-                        break;  
-               case "gucci":
-                        resultTitle = "GUCCI 구찌" 
-                  
-                         resultimage =  "<img src='img/gucci.jpg'>"
-                  resultbirth = "이탈리아 명품 브랜드/1921 설립/설립자: 구찌오 구찌"
-                  
-                        resultExplain = "이탈리아의 전통을 고수하는 구찌는 이탈리아 고유의 문화와 전통을 담고 있는 것이 특징인 명품 브랜드입니다. 자연의 정열적인 에너지를 뿜어내는 패턴이 구찌의 작품에 고스란히 담겨있습니다."
-                  
-                  resultExplain2= "당신은 당신의 관심 분야에서 모르는 것이 없습니다. 대상을 깊게 관찰하는 높은 직관력을 지니고 있으며 지적인 호기심이 많은 당신은 구찌의 앰버서더이자 인간 구찌입니다."
-                  
-                  resultSource= '<a href="http://www.wkorea.com/2020/12/23/hello-happiness-%EC%97%91%EC%86%8C-%EC%B9%B4%EC%9D%B4/">인간 구찌 카이 공식 화보. wkorea</a>'
-                  
-                  gtag('event', '남자 결과 GUCCI', {'event_category': '남자 결과'});
-                        break;
-               case "prada":
-                        resultTitle = "PRADA 프라다" 
-                  
-                         resultimage =  "<img src='img/prada.jpg'>"
-                  resultbirth = "이탈리아 명품 브랜드/1913 설립/설립자: 마리오 프라다"
-                  
-                        resultExplain = "프라다는 단순히 명품을 넘어 개척의 문화, 욕망과 성공의 문화를 상징하는 문화적 아이콘으로 설명되는 이탈리아의 명품 브랜드입니다. 또한 철저한 품질 관리와 파트너십으로 이루어낸 사업 영역 확장을 통해 세계적으로 인정받는 명품입니다."
-                  
-                  resultExplain2= "당신은 에너지가 넘치며 단호하고 솔직합니다. 높은 안목과 성공을 추구하는 사업가 기질을 동시에 가진 당신은 프라다의 앰버서더이자 인간 프라다입니다."
-                  
-                  resultSource= '<a href="http://www.vogue.co.kr/2020/09/17/prada-irene-chanyeol/">인간 프라다 찬열 공식 화보. voguekorea</a>'
-                  
-                  gtag('event', '남자 결과 PRADA', {'event_category': '남자 결과'});
-                        break;
-               case "channel":
-                        resultTitle = "CHANNEL 샤넬" 
-                  
-                         resultimage = "<img src='img/chanel.png'>"
-                  resultbirth = "프랑스 명품 브랜드/1913 설립/가브리엘 샤넬"
-                  
-                        resultExplain = "샤넬은 변치않는 가치를 상징하는 검은색을 대표 컬러로 내세운 프랑스의 명품 브랜드입니다. 샤넬의 설립자인 코코 샤넬은 럭셔리는 편안함을 최고의 가치로 내세웁니다. '누구에게나 어울리는 옷'이라는 스타일을 지향하고 있으며 실용주의를 선도 하는 디자인을 패션쇼에서 내보이고 있습니다. 특별하고 독보적인 매력으로 샤넬 구매자들에게 높은 자부심을 선사하는 브랜드입니다."
-                  
-                  resultExplain2= "당신은 신중하고 강인한 인내력을 가지고 있습니다. 당신은 자기도 모르게 주위의 경외와 존경을 삽니다. 높은 집중력으로 매사에 진지하게 임해 최고의 결과를 이끌어내는 당신이 샤넬의 앰버서더이자 인간 샤넬입니다."
-                  
-                  resultSource= '<a href="http://www.vogue.co.kr/2017/10/22/super-star/">인간 샤넬 GD 공식 화보. vouguekorea</a>'
-                  
-                  gtag('event', '남자 결과 CHANNEL', {'event_category': '남자 결과'});
-                        break;
-               case "burburrey":
-                        resultTitle = "BURBERRY 버버리" 
-                         resultimage = "<img src='img/bb.jpg'>"
-                  resultbirth = "영국 명품 브랜드/1856 설립/설립자: 토마스 버버리"
-                  
-                        resultExplain = "버버리는 단연코 영국을 대표하는 아이콘이라고 자부할 수 있는 영국의 명품 브랜드입니다. 버버리의 패턴은 고급스러운 우아함과 기품을 동시에 뿜어냅니다. 버버리는 오랜 연구를 통해 개발된 독창적인 소재인 개버딘이라는 원단을 사용합니다. 거친 환경으로부터 인간을 보호하는 옷을 만드는 것을 철학을 가지고 있습니다."
-                  
-                  resultExplain2 = "당신은 뛰어난 지도자 기질과 깊은 배려심을 가지고 있습니다. 당신의 강력한 책임감은 언제나 당신을 전진하게 하고 타인을 보살피는 수호자 역할을 할 수 있도록 합니다. 잠재력으로 세상에 기여하는 당신이 버버리의 앰버서더이자 인간 버버리입니다."
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="adModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="adModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="adModalLabel">
+							(AD) 재시도를 한번 더 눌러주세요!
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body d-flex justify-content-center">
+						<ins
+							class="kakao_ad_area"
+							style="display: none;"
+							data-ad-unit="DAN-cYqi63P6PjApnRpL"
+							data-ad-width="300"
+							data-ad-height="250"
+						></ins>
+						<script
+							type="text/javascript"
+							src="//t1.daumcdn.net/kas/static/ba.min.js"
+							async
+						></script>
+						<!-- ad area -->
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+							<span class="try-again-text">다른 사진으로 재시도</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function gaReload1() {
+				gtag('event', '다른 사진으로 재시도 1차', {
+					event_category: '다른 사진으로 재시도',
+				});
+			}
+			function gaReload2() {
+				gtag('event', '다른 사진으로 재시도 2차', {
+					event_category: '다른 사진으로 재시도',
+				});
+				window.location.reload();
+			}
+		</script>
+		<script>
+			(function () {
+				var d = document,
+					s = d.createElement('script');
 
-                  
-                  resultSource= '<a href="https://www.harpersbazaar.co.kr/article/48867">인간 버버리 백현 공식 화보. bazzarkorea</a>'
-                  
-                  gtag('event', '남자 결과 BURBERRY', {'event_category': '남자 결과'});
-                        break;
-               case "lousvuitton":
-                        resultTitle = "LOUS VUITTON 루이비통" 
-                         resultimage =  "<img src='img/lous.jpg'>"
-                  resultbirth = "프랑스 명품 브랜드/1854 창립/창립자: 루이 비통"
-                  
-                        resultExplain = "사흘에 걸친 엄격한 테스트를 통과하지 못하는 제품은 출하 가치가 없다는 철학을 가진 루이비통은 프랑스의 명품 브랜드입니다. 누구나 쉽게 갖지 못하는 희소가치를 가진 루이비통의 제품은 루이비통의 장인정신과 브랜드정신을 빛나게 합니다."
-                  
-                  resultExplain2= "당신은 현실적이고 구체적이며 냉철한 판단력과 상황에 대한 우월한 분석력을 가지고 있습니다. 당신은 당신만이 가진 확실하고 특별한 개성을 아주 잘 알고 있습니다. 그것을 매력있는 무기로 이용 할 수 있는 당신은 루이비통의 앰버서더이자 인간 루이비통입니다."
-                  
-                  resultSource= '<a href="https://www.elle.co.kr/article/22289">인간 루이비통 강다니엘 공식 화보. ellekorea</a>'
-                  
-                  gtag('event', '남자 결과 LOUSVUITTON', {'event_category': '남자 결과'});
-                        break;
-               case "fendi":
-                        resultTitle = "FENDI 펜디" 
-                  
-                         resultimage = "<img src='img/fendi.jpg'>"
-                  resultbirth = "이탈리아 명품 브랜드/1925 창립/창립자: 에두아르도 펜디, 아델 카사그란데"
-                  
-                       resultExplain = "펜디는 고급스럽고 엘레강스한 이탈리아의 명품 모피 브랜드입니다. 펜디를 특별하게 만드는 것은 펜디만이 가진 고유한 디자인과 세계 최고의 품질입니다. 펜디는 제품 개발에 있어 적극적인 투자를 아끼지 않습니다."
-                  
-                  resultExplain2 = "당신은 현실적응력이 뛰어나고 자기관리가 철저한 사람입니다. 당신의 모든 자신 있는 행동과 사고는 가능성 높은 성공 쟁취를 향하고 있습니다. 미래를 위해서 아낌없이 투자하여 성장하고 목표를 이루는 당신은 펜디의 앰버서더이자 인간 펜디입니다."
-                  
-                  resultSource= '<a href="https://www.elle.com.sg/2020/11/29/unveiling-our-december-cover-star-global-charting-musician-jackson-wang/">인간 펜디 잭슨 공식 화보. elle</a>'
-                  
-                  gtag('event', '남자 결과 FENDI', {'event_category': '남자 결과'});
-                        break;
-               case "moncler":
-                        resultTitle = "Moncler 몽클레르" 
-                        resultimage = "<img src='img/moncler.jpg'>"
-                  resultbirth = "프랑스 명품 브랜드/1952 창립/창립자: 르네 라밀론"
-                  
-                       resultExplain = "몽클레르는 '높은 고도에 도전하는 이들'을 위해 만들어진 프랑스의 명품 브랜드입니다. 오래 된 전통에 기준점을 세우고 새로움의 영혼을 불어넣는 과감한 콜라보레이션 추구는 몽클레르의 아름다움이 언제 어디서나의 완벽한 조화를 이루어낼 수 있도록 합니다."
-                  
-                  resultExplain2 = "당신은 당신이 마주한 모든 것에서 재능을 찾고 최고가 될 수 있는 사람입니다. 한계를 돌파하는 열정을 즐길 줄 아는 당신이 몽클레르의 앰버서더이자 인간 몽클레르입니다."
-                  
-                  resultSource= '<a href="https://www.esquirekorea.co.kr/article/47707">인간 몽클레르 민현 공식 화보. esquirekorea</a>'
-                  
-                  gtag('event', '남자 결과 Moncler', {'event_category': '남자 결과'});
-                        break;
-               case "bvlgari":
-                        resultTitle = "BVLGARI 불가리" 
-                  
-                        resultimage =  "<img src='img/bvl.jpg'>"
-                  resultbirth = "이탈리아 명품 브랜드/1884 설립/설립자: 소티리오스 불가리스"
-                  
-                  
-                        resultExplain = "불가리는 다양한 사업을 시도하며 변화를 두려워하지 않는 이탈리아의 럭셔리 브랜드입니다. 불가리는 브랜드의 풍부한 유산에 늘 깊은 경의를 표함과 동시에, 혁신적인 변화와 새로운 트렌드를 적용하는데 주저하지 않습니다."
-                  
-                  resultExplain2 = "당신은 실패와 실수를 두려워하지 않고 난관을 가뿐히 극복할 내면의 힘을 가지고 있습니다. 올바른 품성과 인성으로 주변 사람에게 신의를 잃지 않아 주위의 관심과 도움으로 성공의 길을 걷는 사람입니다."
-                  
-                  resultSource= '<a href="http://www.wkorea.com/2019/03/28/one-fine-day-in-rome-%ec%88%98%ed%98%b8/">인간 불가리 수호 공식 화보. wkorea</a>'
-                  
-                  gtag('event', '남자 결과 BVLGARI', {'event_category': '남자 결과'});
-                        break;
-                  
-                    default:
-                        resultTitle = "알수없음"
-                         resultimage = ""
-                  resultbirth = ""
-                  
-                        resultExplain = ""
-                  resultExplain2=""
-            
-                  resultSource= ""
-                  
-                        gtag('event', '남자 결과 알수없음', {'event_category': '남자 결과'});
-                }
-            } 
-         
-         else {
-                gtag('event', '명품 테스트 수행', {
-                    'event_category': '명품 테스트 수행',
-                    'event_label': '여자'
-                });
-                switch (prediction[0].className) {
-                   case "dior":
-                        resultTitle = "Dior 디올" 
-                  
-                         resultimage = "<img src='img/dior.jpg'>"
-                  resultbirth = "프랑스 명품 브랜드/1947 설립/설립자:크리스챤 디올"
-                  
-                        resultExplain = "디올은 프랑스 국민의 '자존심'을 상징하는 프랑스의 명품 브랜드이며 설명이 필요 없는 최고의 화려함 지니고 있는 브랜드입니다."
-                  
-                  resultExplain2= "당신은 어디에서나 당신의 사교성과 적응력으로 주위를 기쁘게하는 능력이 있습니다. 뛰어나지만 겸손을 잃지 않는 순수함으로 사람들에게 좋은 평가를 받는 당신은 디올의 앰버서더이자 인간 디올입니다."
-                  
-                  resultSource= '<a href="http://www.wkorea.com/2019/05/21/day-dreaming-%EC%88%98%EC%A7%80/">인간 디올 수지 공식 화보. wkorea</a>'
-                  
-                  
-                  gtag('event', '여자 결과 Dior', {'event_category': '여자 결과'});
-                        break;
-               case "gucci":
-                        resultTitle = "GUCCI 구찌" 
-                  
-                         resultimage = "<img src='img/gucci.jpg'>"
-                  resultbirth = "이탈리아 명품 브랜드/1921 설립/설립자: 구찌오 구찌"
-                  
-                       resultExplain = "이탈리아의 전통을 고수하는 구찌는 이탈리아 고유의 문화와 전통을 담고 있는 것이 특징인 명품 브랜드입니다. 자연의 정열적인 에너지를 뿜어내는 패턴이 구찌의 작품에 고스란히 담겨있습니다."
-                  
-                  resultExplain2 = "당신은 당신의 관심 분야에서 모르는 것이 없습니다. 대상을 깊게 관찰하는 높은 직관력을 지니고 있으며 지적인 호기심이 많은 당신은 구찌의 앰버서더이자 인간 구찌입니다."
-                  
-                  resultSource= '<a href="http://www.wkorea.com/2020/03/23/lucky-spring-%EC%95%84%EC%9D%B4%EC%9C%A0/">인간 구찌 아이유 공식 화보. wkorea</a>'
-                  
-                  gtag('event', '여자 결과 GUCCI', {'event_category': '여자 결과'});
-                        break;
-               case "prada":
-                        resultTitle = "PRADA 프라다" 
-                  
-                        resultimage =  "<img src='img/prada.jpg'>"
-                  resultbirth = "이탈리아 명품 브랜드/1913 설립/설립자: 마리오 프라다"
-                  
-                        resultExplain = "프라다는 단순히 명품을 넘어 개척의 문화, 욕망과 성공의 문화를 상징하는 문화적 아이콘으로 설명되는 이탈리아의 명품 브랜드입니다. 또한 철저한 품질 관리와 파트너십으로 이루어낸 사업 영역 확장을 통해 세계적으로 인정받는 명품입니다."
-                  
-                  resultExplain2 = "당신은 에너지가 넘치며 단호하고 솔직합니다. 높은 안목과 성공을 추구하는 사업가 기질을 동시에 가진 당신은 프라다의 앰버서더이자 인간 프라다입니다."
-                  
-                  resultSource= '<a href="http://www.vogue.co.kr/2020/09/17/prada-irene-chanyeol/">인간 프라다 아이린 공식 화보. vogue korea</a>'
-                  
-                  gtag('event', '여자 결과 PRADA', {'event_category': '여자 결과'});
-                        break;
-               
-               case "channel":
-                        resultTitle = "CHANNEL 샤넬" 
-                  
-                         resultimage =  "<img src='img/chanel.jpg'>"
-                  resultbirth = "프랑스 명품 브랜드/1913 설립/가브리엘 샤넬"
-                  
-                        resultExplain = "샤넬은 변치않는 가치를 상징하는 검은색을 대표 컬러로 내세운 프랑스의 명품 브랜드입니다. 샤넬의 설립자인 코코 샤넬은 럭셔리는 편안함을 최고의 가치로 내세웁니다. '누구에게나 어울리는 옷'이라는 스타일을 지향하고 있으며 실용주의를 선도 하는 디자인을 패션쇼에서 내보이고 있습니다. 특별하고 독보적인 매력으로 샤넬 구매자들에게 높은 자부심을 선사하는 브랜드입니다."
-                  
-                  resultExplain2 = "당신은 신중하고 강인한 인내력을 가지고 있습니다. 당신은 자기도 모르게 주위의 경외와 존경을 삽니다. 높은 집중력으로 매사에 진지하게 임해 최고의 결과를 이끌어내는 당신이 샤넬의 앰버서더이자 인간 샤넬입니다. "
-                  
-                  resultSource= '<a href="http://www.dazedkorea.com/music/article/447/detail.do">인간 샤넬 제니 공식 .dazedkorea</a>'
-                  
-                  gtag('event', '여자 결과 CHANNEL', {'event_category': '여자 결과'});
-                        break;
-               case "burburrey":
-                        resultTitle = "BURBERRY 버버리" 
-                         resultimage = "<img src='img/bb.jpg'>"
-                  resultbirth = "영국 명품 브랜드/1856 설립/설립자: 토마스 버버리"
-                  
-                       resultExplain = "버버리는 단연코 영국을 대표하는 아이콘이라고 자부할 수 있는 영국의 명품 브랜드입니다. 버버리의 패턴은 고급스러운 우아함과 기품을 동시에 뿜어냅니다. 버버리는 오랜 연구를 통해 개발된 독창적인 소재인 개버딘이라는 원단을 사용합니다. 거친 환경으로부터 인간을 보호하는 옷을 만드는 것을 철학을 가지고 있습니다."
-                  
-                  resultExplain2 = "당신은 뛰어난 지도자 기질과 깊은 배려심을 가지고 있습니다. 당신의 강력한 책임감은 언제나 당신을 전진하게 하고 타인을 보살피는 수호자 역할을 할 수 있도록 합니다. 잠재력으로 세상에 기여하는 당신이 버버리의 앰버서더이자 인간 버버리입니다."
-                  
-                  resultSource= '<a href="https://www.elle.co.kr/article/43183">인간 버버리 지수 공식 화보 .ellekorea</a>'
-                  
-                  gtag('event', '여자 결과 BURBERRY', {'event_category': '여자 결과'});
-                        break;
-               case "lousvuitton":
-                        resultTitle = "LOUSVUITTON 루이비통" 
-                         resultimage =  "<img src='img/lous.jpg'>"
-                  resultbirth = "프랑스 명품 브랜드/1854 창립/창립자: 루이 비통"
-                  
-                       resultExplain = "사흘에 걸친 엄격한 테스트를 통과하지 못하는 제품은 출하 가치가 없다는 철학을 가진 루이비통은 프랑스의 명품 브랜드입니다. 누구나 쉽게 갖지 못하는 희소가치를 가진 루이비통의 제품은 루이비통의 장인정신과 브랜드정신을 빛나게 합니다."
-                  
-                  resultExplain2 = "당신은 현실적이고 구체적이며 냉철한 판단력과 상황에 대한 우월한 분석력을 가지고 있습니다. 당신은 당신만이 가진 확실하고 특별한 개성을 아주 잘 알고 있습니다. 그것을 매력있는 무기로 이용 할 수 있는 당신은 루이비통의 앰버서더이자 인간 루이비통입니다."
-                  
-                  
-                  resultSource= '<a href="https://www.elle.co.kr/article/21547">인간 루이비통 배두나 공식 화보. ellekorea</a>'
-                  
-                  gtag('event', '여자 결과 LOUSVUITTON', {'event_category': '여자 결과'});
-                        break;
-               case "fendi":
-                        resultTitle = "FENDI 펜디"
-                  
-                         resultimage =  "<img src='img/fendi.jpg'>"
-                  resultbirth = "이탈리아 명품 브랜드/1925 창립/창립자: 에두아르도 펜디, 아델 카사그란데"
-                  
-                       resultExplain = "펜디는 고급스럽고 엘레강스한 이탈리아의 명품 모피 브랜드입니다. 펜디를 특별하게 만드는 것은 펜디만이 가진 고유한 디자인과 세계 최고의 품질입니다. 펜디는 제품 개발에 있어 적극적인 투자를 아끼지 않습니다."
-                  
-                  resultExplain2 = "당신은 현실적응력이 뛰어나고 자기관리가 철저한 사람입니다. 당신의 모든 자신 있는 행동과 사고는 가능성 높은 성공 쟁취를 향하고 있습니다. 미래를 위해서 아낌없이 투자하여 성장하고 목표를 이루는 당신은 펜디의 앰버서더이자 인간 펜디입니다."
-                  
-                  resultSource= '<a href="https://t.harpersbazaar.co.kr/article/49568">인간 펜디 한예슬 공식 화보 .harpersbazaar</a>'
-                  
-                  gtag('event', '여자 결과 FENDI', {'event_category': '여자 결과'});
-                        break;
-               case "celine":
-                        resultTitle = "CELINE 셀린느" 
-                  
-                        resultimage =  "<img src='img/celine.png'>"
-                  resultbirth = "프랑스 명품 브랜드/1945 설립/설립자: 셀린 비피아나"
-                  
-                        resultExplain = "셀린느는 깊은 전통과 절제된 우아함을 최고의 가치로 선보이는 프랑스의 명품 브랜드입니다. 셀린느를 더욱 특별하게 만드는 것은 차별화 된 고급 소재를 사용해 만든 셀린느의 고전적이고 아름다운 작품입니다."
-                  
-                  resultExplain2 = "당신은 내면의 가치를 중요하게 여기며 확고한 신념과 열정을 가지고 있습니다. 언제나 목표를 향해 묵묵히 걸어가는 기품 있는 모습만으로 주변에 단단한 영향력을 미칠 수 있는 당신은 셀린느의 앰버서더이자 인간 셀린느입니다."
-                  
-                  resultSource= '<a href="http://www.dazedkorea.com/music/article/382/detail.do" class="source">인간 셀린느 리사 공식 화보 . dazedkorea</a>'
-                  
-                  gtag('event', '여자 결과 CELINE', {'event_category': '여자 결과'});
-                        break;
-               case "ysl":
-                        resultTitle = "SAINT LAURENT 생로랑" 
-                        resultimage =  "<img src='img/ysl.jpg'>"
-                  resultbirth = "프랑스 명품 브랜드/1961 설립/설립자: 이브 생 로랑"
-                  
-                       resultExplain = "생로랑은 언제나 혁신적인 시도로 독창적인 가치를 추구합니다. 생로랑의 파격적인 행보는 패션 업계를 뛰어넘어 시대 흐름을 주도하는 독보적인 브랜드입니다."
-                  
-                  resultExplain2 = "당신은 구속되지 않은 자유로움을 추구하고 뛰어난 상상력과 창의력을 가지고 있습니다. 고정관념에서 벗어나는 것을 두려워하지 않고 언제나 새로운 시도를 통해 앞서나가는 혁명가 기질을 가진 당신은 생로랑의 앰버서더이자 인간 생로랑입니다."
-                  
-                  resultSource= '<a href="https://m.fashionn.com/board/read.php?table=style&number=33625" class="source">인간 생로랑 로제 공식 화보 .fashionn</a>'
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the </noscript>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+		<script>
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.image-upload-wrap').hide();
+						$('#loading').show();
+						$('.file-upload-image').attr('src', e.target.result);
+						$('.file-upload-content').show();
+						$('.image-title').html(input.files[0].name);
+					};
+					reader.readAsDataURL(input.files[0]);
+					init().then(function () {
+						console.log('hello');
+						predict();
+						$('#loading').hide();
+					});
+				} else {
+					removeUpload();
+				}
+			}
 
+			function removeUpload() {
+				$('.file-upload-input').replaceWith($('.file-upload-input').clone());
+				$('.file-upload-content').hide();
+				$('.image-upload-wrap').show();
+			}
+			$('.image-upload-wrap').bind('dragover', function () {
+				$('.image-upload-wrap').addClass('image-dropping');
+			});
+			$('.image-upload-wrap').bind('dragleave', function () {
+				$('.image-upload-wrap').removeClass('image-dropping');
+			});
+		</script>
 
-                  gtag('event', '여자 결과 YSL', {'event_category': '여자 결과'});
-                        break;
+		<script type="text/javascript">
+			let URL;
+			const urlMale = 'https://teachablemachine.withgoogle.com/models/2fJNB90BJ/';
+			const urlFemale = 'https://teachablemachine.withgoogle.com/models/9N6DXEPmG/';
+			let model, webcam, labelContainer, maxPredictions;
+			async function init() {
+				if (document.getElementById('gender').checked) {
+					URL = urlMale;
+				} else {
+					URL = urlFemale;
+				}
+				const modelURL = URL + 'model.json';
+				const metadataURL = URL + 'metadata.json';
+				model = await tmImage.load(modelURL, metadataURL);
+				maxPredictions = model.getTotalClasses();
+				labelContainer = document.getElementById('label-container');
+				for (let i = 0; i < maxPredictions; i++) {
+					var element = document.createElement('div');
+					element.classList.add('d-flex');
+					labelContainer.appendChild(element);
+				}
+			}
+			async function predict() {
+				var image = document.getElementById('face-image');
+				const prediction = await model.predict(image, false);
+				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+				prediction[(0, 1, 2)];
+				console.log(prediction[0].className);
 
-                    default:
-                        resultTitle = "알수없음"
-                         resultimage = ""
-                  resultbirth = ""
-                       resultExplain = ""
-                  resultExplain2=""
-                  resultSource= ""
-                        gtag('event', '여자 결과 알수없음', {'event_category': '여자 결과'});
-                }
-            }
-         
-         
-            var title = "<div class='-MP-title'>" + resultTitle + "</div>"
-         
-            var image = "<div class='-MP-image pt-2'>" +  resultimage + "</div>"
-         
-          var birth = "<div class='-MP-birth pt-2 pb-2'>" + resultbirth + "</div>"
-         
-         
-         var explain = "<div class='-MP-explain pt-2 pb-2'>" + resultExplain + "</div>"
-       
-       
-         var explain2 = "<div class='-MP-explain2 pt-2 pb-2'>" + resultExplain2 + "</div>"
-         
-         
-       var source = "<div class='-MP-source pt-2 pb-2'>" + resultSource + "</div>"
-       
-       
-       $('.result-message').html(title + image + birth + explain + explain2 + source);
-         
-      
-         
-            var barWidth;
-         
-         
-         
-         
-         
-         
+				var resultTitle,
+					resultimage,
+					resultExplain,
+					resultExplain2,
+					resultbirth,
+					resultSource;
 
-         for (let i = 0; i < 3; i++) {
-                if (prediction[i].probability.toFixed(2) > 0.1) {
-                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "4%"
-                } else {
-                    barWidth = "2%"
-                }
-                var labelTitle;
-                switch (prediction[i].className) {
-                case "dior":
-                        labelTitle = "Dior"
-                       break;
-                case "gucci":
-                        labelTitle = "GUCCI"
-                       break;
-                case "prada":
-                        labelTitle = "PRADA"
-                       break;
-                case "channel":
-                        labelTitle = "CHANNEL"
-                       break;
-                case "burburrey":
-                        labelTitle = "BURBERRY"
-                       break;
-                case "lousvuitton":
-                        labelTitle = "LOUSVUITTON"
-                       break;
-                case "fendi":
-                        labelTitle = "FENDI"
-                       break;
-                case "moncler":
-                        labelTitle = "Moncler"
-                       break;
-                case "bvlgari":
-                        labelTitle = "BVLGARI"
-                       break;
-                case "celine":
-                        labelTitle = "CELINE"
-                       break;
-                case "ysl":
-                        labelTitle = "SAINTLOURENT"
-                       break;
-             default:
-                        labelTitle = "알수없음"
-                }
-                 var label = "<div class='masterpiece-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-                labelContainer.childNodes[i].innerHTML = label + bar;
-            }
+				if (document.getElementById('gender').checked) {
+					gtag('event', '명품 테스트 수행', {
+						event_category: '명품 테스트 수행',
+						event_label: '남자',
+					});
+					switch (prediction[0].className) {
+						case 'dior':
+							resultTitle = 'Dior 디올';
 
-        }
-    </script>
- 
-</body>
-   
-   <!-- 
+							resultimage = "<img src='img/dior.jpg'>";
+							resultbirth = '프랑스 명품 브랜드/1947 설립/설립자:크리스챤 디올';
+
+							resultExplain =
+								"디올은 프랑스 국민의 '자존심'을 상징하는 프랑스의 명품 브랜드이며 설명이 필요 없는 최고의 화려함 지니고 있는 브랜드입니다.";
+
+							resultExplain2 =
+								'당신은 어디에서나 당신의 사교성과 적응력으로 주위를 기쁘게하는 능력이 있습니다. 뛰어나지만 겸손을 잃지 않는 순수함으로 사람들에게 좋은 평가를 받는 당신은 디올의 앰버서더이자 인간 디올입니다.';
+
+							resultSource =
+								'<a href="http://www.dazedkorea.com/fashion/article/1183/detail.do">인간 디올 세훈 공식 화보. dazedkorea</a>';
+
+							gtag('event', '남자 결과 Dior', { event_category: '남자 결과' });
+							break;
+						case 'gucci':
+							resultTitle = 'GUCCI 구찌';
+
+							resultimage = "<img src='img/gucci.jpg'>";
+							resultbirth = '이탈리아 명품 브랜드/1921 설립/설립자: 구찌오 구찌';
+
+							resultExplain =
+								'이탈리아의 전통을 고수하는 구찌는 이탈리아 고유의 문화와 전통을 담고 있는 것이 특징인 명품 브랜드입니다. 자연의 정열적인 에너지를 뿜어내는 패턴이 구찌의 작품에 고스란히 담겨있습니다.';
+
+							resultExplain2 =
+								'당신은 당신의 관심 분야에서 모르는 것이 없습니다. 대상을 깊게 관찰하는 높은 직관력을 지니고 있으며 지적인 호기심이 많은 당신은 구찌의 앰버서더이자 인간 구찌입니다.';
+
+							resultSource =
+								'<a href="http://www.wkorea.com/2020/12/23/hello-happiness-%EC%97%91%EC%86%8C-%EC%B9%B4%EC%9D%B4/">인간 구찌 카이 공식 화보. wkorea</a>';
+
+							gtag('event', '남자 결과 GUCCI', { event_category: '남자 결과' });
+							break;
+						case 'prada':
+							resultTitle = 'PRADA 프라다';
+
+							resultimage = "<img src='img/prada.jpg'>";
+							resultbirth = '이탈리아 명품 브랜드/1913 설립/설립자: 마리오 프라다';
+
+							resultExplain =
+								'프라다는 단순히 명품을 넘어 개척의 문화, 욕망과 성공의 문화를 상징하는 문화적 아이콘으로 설명되는 이탈리아의 명품 브랜드입니다. 또한 철저한 품질 관리와 파트너십으로 이루어낸 사업 영역 확장을 통해 세계적으로 인정받는 명품입니다.';
+
+							resultExplain2 =
+								'당신은 에너지가 넘치며 단호하고 솔직합니다. 높은 안목과 성공을 추구하는 사업가 기질을 동시에 가진 당신은 프라다의 앰버서더이자 인간 프라다입니다.';
+
+							resultSource =
+								'<a href="http://www.vogue.co.kr/2020/09/17/prada-irene-chanyeol/">인간 프라다 찬열 공식 화보. voguekorea</a>';
+
+							gtag('event', '남자 결과 PRADA', { event_category: '남자 결과' });
+							break;
+						case 'channel':
+							resultTitle = 'CHANNEL 샤넬';
+
+							resultimage = "<img src='img/chanel.png'>";
+							resultbirth = '프랑스 명품 브랜드/1913 설립/가브리엘 샤넬';
+
+							resultExplain =
+								"샤넬은 변치않는 가치를 상징하는 검은색을 대표 컬러로 내세운 프랑스의 명품 브랜드입니다. 샤넬의 설립자인 코코 샤넬은 럭셔리는 편안함을 최고의 가치로 내세웁니다. '누구에게나 어울리는 옷'이라는 스타일을 지향하고 있으며 실용주의를 선도 하는 디자인을 패션쇼에서 내보이고 있습니다. 특별하고 독보적인 매력으로 샤넬 구매자들에게 높은 자부심을 선사하는 브랜드입니다.";
+
+							resultExplain2 =
+								'당신은 신중하고 강인한 인내력을 가지고 있습니다. 당신은 자기도 모르게 주위의 경외와 존경을 삽니다. 높은 집중력으로 매사에 진지하게 임해 최고의 결과를 이끌어내는 당신이 샤넬의 앰버서더이자 인간 샤넬입니다.';
+
+							resultSource =
+								'<a href="http://www.vogue.co.kr/2017/10/22/super-star/">인간 샤넬 GD 공식 화보. vouguekorea</a>';
+
+							gtag('event', '남자 결과 CHANNEL', { event_category: '남자 결과' });
+							break;
+						case 'burburrey':
+							resultTitle = 'BURBERRY 버버리';
+							resultimage = "<img src='img/bb.jpg'>";
+							resultbirth = '영국 명품 브랜드/1856 설립/설립자: 토마스 버버리';
+
+							resultExplain =
+								'버버리는 단연코 영국을 대표하는 아이콘이라고 자부할 수 있는 영국의 명품 브랜드입니다. 버버리의 패턴은 고급스러운 우아함과 기품을 동시에 뿜어냅니다. 버버리는 오랜 연구를 통해 개발된 독창적인 소재인 개버딘이라는 원단을 사용합니다. 거친 환경으로부터 인간을 보호하는 옷을 만드는 것을 철학을 가지고 있습니다.';
+
+							resultExplain2 =
+								'당신은 뛰어난 지도자 기질과 깊은 배려심을 가지고 있습니다. 당신의 강력한 책임감은 언제나 당신을 전진하게 하고 타인을 보살피는 수호자 역할을 할 수 있도록 합니다. 잠재력으로 세상에 기여하는 당신이 버버리의 앰버서더이자 인간 버버리입니다.';
+
+							resultSource =
+								'<a href="https://www.harpersbazaar.co.kr/article/48867">인간 버버리 백현 공식 화보. bazzarkorea</a>';
+
+							gtag('event', '남자 결과 BURBERRY', { event_category: '남자 결과' });
+							break;
+						case 'lousvuitton':
+							resultTitle = 'LOUS VUITTON 루이비통';
+							resultimage = "<img src='img/lous.jpg'>";
+							resultbirth = '프랑스 명품 브랜드/1854 창립/창립자: 루이 비통';
+
+							resultExplain =
+								'사흘에 걸친 엄격한 테스트를 통과하지 못하는 제품은 출하 가치가 없다는 철학을 가진 루이비통은 프랑스의 명품 브랜드입니다. 누구나 쉽게 갖지 못하는 희소가치를 가진 루이비통의 제품은 루이비통의 장인정신과 브랜드정신을 빛나게 합니다.';
+
+							resultExplain2 =
+								'당신은 현실적이고 구체적이며 냉철한 판단력과 상황에 대한 우월한 분석력을 가지고 있습니다. 당신은 당신만이 가진 확실하고 특별한 개성을 아주 잘 알고 있습니다. 그것을 매력있는 무기로 이용 할 수 있는 당신은 루이비통의 앰버서더이자 인간 루이비통입니다.';
+
+							resultSource =
+								'<a href="https://www.elle.co.kr/article/22289">인간 루이비통 강다니엘 공식 화보. ellekorea</a>';
+
+							gtag('event', '남자 결과 LOUSVUITTON', { event_category: '남자 결과' });
+							break;
+						case 'fendi':
+							resultTitle = 'FENDI 펜디';
+
+							resultimage = "<img src='img/fendi.jpg'>";
+							resultbirth =
+								'이탈리아 명품 브랜드/1925 창립/창립자: 에두아르도 펜디, 아델 카사그란데';
+
+							resultExplain =
+								'펜디는 고급스럽고 엘레강스한 이탈리아의 명품 모피 브랜드입니다. 펜디를 특별하게 만드는 것은 펜디만이 가진 고유한 디자인과 세계 최고의 품질입니다. 펜디는 제품 개발에 있어 적극적인 투자를 아끼지 않습니다.';
+
+							resultExplain2 =
+								'당신은 현실적응력이 뛰어나고 자기관리가 철저한 사람입니다. 당신의 모든 자신 있는 행동과 사고는 가능성 높은 성공 쟁취를 향하고 있습니다. 미래를 위해서 아낌없이 투자하여 성장하고 목표를 이루는 당신은 펜디의 앰버서더이자 인간 펜디입니다.';
+
+							resultSource =
+								'<a href="https://www.elle.com.sg/2020/11/29/unveiling-our-december-cover-star-global-charting-musician-jackson-wang/">인간 펜디 잭슨 공식 화보. elle</a>';
+
+							gtag('event', '남자 결과 FENDI', { event_category: '남자 결과' });
+							break;
+						case 'moncler':
+							resultTitle = 'Moncler 몽클레르';
+							resultimage = "<img src='img/moncler.jpg'>";
+							resultbirth = '프랑스 명품 브랜드/1952 창립/창립자: 르네 라밀론';
+
+							resultExplain =
+								"몽클레르는 '높은 고도에 도전하는 이들'을 위해 만들어진 프랑스의 명품 브랜드입니다. 오래 된 전통에 기준점을 세우고 새로움의 영혼을 불어넣는 과감한 콜라보레이션 추구는 몽클레르의 아름다움이 언제 어디서나의 완벽한 조화를 이루어낼 수 있도록 합니다.";
+
+							resultExplain2 =
+								'당신은 당신이 마주한 모든 것에서 재능을 찾고 최고가 될 수 있는 사람입니다. 한계를 돌파하는 열정을 즐길 줄 아는 당신이 몽클레르의 앰버서더이자 인간 몽클레르입니다.';
+
+							resultSource =
+								'<a href="https://www.esquirekorea.co.kr/article/47707">인간 몽클레르 민현 공식 화보. esquirekorea</a>';
+
+							gtag('event', '남자 결과 Moncler', { event_category: '남자 결과' });
+							break;
+						case 'bvlgari':
+							resultTitle = 'BVLGARI 불가리';
+
+							resultimage = "<img src='img/bvl.jpg'>";
+							resultbirth =
+								'이탈리아 명품 브랜드/1884 설립/설립자: 소티리오스 불가리스';
+
+							resultExplain =
+								'불가리는 다양한 사업을 시도하며 변화를 두려워하지 않는 이탈리아의 럭셔리 브랜드입니다. 불가리는 브랜드의 풍부한 유산에 늘 깊은 경의를 표함과 동시에, 혁신적인 변화와 새로운 트렌드를 적용하는데 주저하지 않습니다.';
+
+							resultExplain2 =
+								'당신은 실패와 실수를 두려워하지 않고 난관을 가뿐히 극복할 내면의 힘을 가지고 있습니다. 올바른 품성과 인성으로 주변 사람에게 신의를 잃지 않아 주위의 관심과 도움으로 성공의 길을 걷는 사람입니다.';
+
+							resultSource =
+								'<a href="http://www.wkorea.com/2019/03/28/one-fine-day-in-rome-%ec%88%98%ed%98%b8/">인간 불가리 수호 공식 화보. wkorea</a>';
+
+							gtag('event', '남자 결과 BVLGARI', { event_category: '남자 결과' });
+							break;
+
+						default:
+							resultTitle = '알수없음';
+							resultimage = '';
+							resultbirth = '';
+
+							resultExplain = '';
+							resultExplain2 = '';
+
+							resultSource = '';
+
+							gtag('event', '남자 결과 알수없음', { event_category: '남자 결과' });
+					}
+				} else {
+					gtag('event', '명품 테스트 수행', {
+						event_category: '명품 테스트 수행',
+						event_label: '여자',
+					});
+					switch (prediction[0].className) {
+						case 'dior':
+							resultTitle = 'Dior 디올';
+
+							resultimage = "<img src='img/dior.jpg'>";
+							resultbirth = '프랑스 명품 브랜드/1947 설립/설립자:크리스챤 디올';
+
+							resultExplain =
+								"디올은 프랑스 국민의 '자존심'을 상징하는 프랑스의 명품 브랜드이며 설명이 필요 없는 최고의 화려함 지니고 있는 브랜드입니다.";
+
+							resultExplain2 =
+								'당신은 어디에서나 당신의 사교성과 적응력으로 주위를 기쁘게하는 능력이 있습니다. 뛰어나지만 겸손을 잃지 않는 순수함으로 사람들에게 좋은 평가를 받는 당신은 디올의 앰버서더이자 인간 디올입니다.';
+
+							resultSource =
+								'<a href="http://www.wkorea.com/2019/05/21/day-dreaming-%EC%88%98%EC%A7%80/">인간 디올 수지 공식 화보. wkorea</a>';
+
+							gtag('event', '여자 결과 Dior', { event_category: '여자 결과' });
+							break;
+						case 'gucci':
+							resultTitle = 'GUCCI 구찌';
+
+							resultimage = "<img src='img/gucci.jpg'>";
+							resultbirth = '이탈리아 명품 브랜드/1921 설립/설립자: 구찌오 구찌';
+
+							resultExplain =
+								'이탈리아의 전통을 고수하는 구찌는 이탈리아 고유의 문화와 전통을 담고 있는 것이 특징인 명품 브랜드입니다. 자연의 정열적인 에너지를 뿜어내는 패턴이 구찌의 작품에 고스란히 담겨있습니다.';
+
+							resultExplain2 =
+								'당신은 당신의 관심 분야에서 모르는 것이 없습니다. 대상을 깊게 관찰하는 높은 직관력을 지니고 있으며 지적인 호기심이 많은 당신은 구찌의 앰버서더이자 인간 구찌입니다.';
+
+							resultSource =
+								'<a href="http://www.wkorea.com/2020/03/23/lucky-spring-%EC%95%84%EC%9D%B4%EC%9C%A0/">인간 구찌 아이유 공식 화보. wkorea</a>';
+
+							gtag('event', '여자 결과 GUCCI', { event_category: '여자 결과' });
+							break;
+						case 'prada':
+							resultTitle = 'PRADA 프라다';
+
+							resultimage = "<img src='img/prada.jpg'>";
+							resultbirth = '이탈리아 명품 브랜드/1913 설립/설립자: 마리오 프라다';
+
+							resultExplain =
+								'프라다는 단순히 명품을 넘어 개척의 문화, 욕망과 성공의 문화를 상징하는 문화적 아이콘으로 설명되는 이탈리아의 명품 브랜드입니다. 또한 철저한 품질 관리와 파트너십으로 이루어낸 사업 영역 확장을 통해 세계적으로 인정받는 명품입니다.';
+
+							resultExplain2 =
+								'당신은 에너지가 넘치며 단호하고 솔직합니다. 높은 안목과 성공을 추구하는 사업가 기질을 동시에 가진 당신은 프라다의 앰버서더이자 인간 프라다입니다.';
+
+							resultSource =
+								'<a href="http://www.vogue.co.kr/2020/09/17/prada-irene-chanyeol/">인간 프라다 아이린 공식 화보. vogue korea</a>';
+
+							gtag('event', '여자 결과 PRADA', { event_category: '여자 결과' });
+							break;
+
+						case 'channel':
+							resultTitle = 'CHANNEL 샤넬';
+
+							resultimage = "<img src='img/chanel.jpg'>";
+							resultbirth = '프랑스 명품 브랜드/1913 설립/가브리엘 샤넬';
+
+							resultExplain =
+								"샤넬은 변치않는 가치를 상징하는 검은색을 대표 컬러로 내세운 프랑스의 명품 브랜드입니다. 샤넬의 설립자인 코코 샤넬은 럭셔리는 편안함을 최고의 가치로 내세웁니다. '누구에게나 어울리는 옷'이라는 스타일을 지향하고 있으며 실용주의를 선도 하는 디자인을 패션쇼에서 내보이고 있습니다. 특별하고 독보적인 매력으로 샤넬 구매자들에게 높은 자부심을 선사하는 브랜드입니다.";
+
+							resultExplain2 =
+								'당신은 신중하고 강인한 인내력을 가지고 있습니다. 당신은 자기도 모르게 주위의 경외와 존경을 삽니다. 높은 집중력으로 매사에 진지하게 임해 최고의 결과를 이끌어내는 당신이 샤넬의 앰버서더이자 인간 샤넬입니다. ';
+
+							resultSource =
+								'<a href="http://www.dazedkorea.com/music/article/447/detail.do">인간 샤넬 제니 공식 .dazedkorea</a>';
+
+							gtag('event', '여자 결과 CHANNEL', { event_category: '여자 결과' });
+							break;
+						case 'burburrey':
+							resultTitle = 'BURBERRY 버버리';
+							resultimage = "<img src='img/bb.jpg'>";
+							resultbirth = '영국 명품 브랜드/1856 설립/설립자: 토마스 버버리';
+
+							resultExplain =
+								'버버리는 단연코 영국을 대표하는 아이콘이라고 자부할 수 있는 영국의 명품 브랜드입니다. 버버리의 패턴은 고급스러운 우아함과 기품을 동시에 뿜어냅니다. 버버리는 오랜 연구를 통해 개발된 독창적인 소재인 개버딘이라는 원단을 사용합니다. 거친 환경으로부터 인간을 보호하는 옷을 만드는 것을 철학을 가지고 있습니다.';
+
+							resultExplain2 =
+								'당신은 뛰어난 지도자 기질과 깊은 배려심을 가지고 있습니다. 당신의 강력한 책임감은 언제나 당신을 전진하게 하고 타인을 보살피는 수호자 역할을 할 수 있도록 합니다. 잠재력으로 세상에 기여하는 당신이 버버리의 앰버서더이자 인간 버버리입니다.';
+
+							resultSource =
+								'<a href="https://www.elle.co.kr/article/43183">인간 버버리 지수 공식 화보 .ellekorea</a>';
+
+							gtag('event', '여자 결과 BURBERRY', { event_category: '여자 결과' });
+							break;
+						case 'lousvuitton':
+							resultTitle = 'LOUSVUITTON 루이비통';
+							resultimage = "<img src='img/lous.jpg'>";
+							resultbirth = '프랑스 명품 브랜드/1854 창립/창립자: 루이 비통';
+
+							resultExplain =
+								'사흘에 걸친 엄격한 테스트를 통과하지 못하는 제품은 출하 가치가 없다는 철학을 가진 루이비통은 프랑스의 명품 브랜드입니다. 누구나 쉽게 갖지 못하는 희소가치를 가진 루이비통의 제품은 루이비통의 장인정신과 브랜드정신을 빛나게 합니다.';
+
+							resultExplain2 =
+								'당신은 현실적이고 구체적이며 냉철한 판단력과 상황에 대한 우월한 분석력을 가지고 있습니다. 당신은 당신만이 가진 확실하고 특별한 개성을 아주 잘 알고 있습니다. 그것을 매력있는 무기로 이용 할 수 있는 당신은 루이비통의 앰버서더이자 인간 루이비통입니다.';
+
+							resultSource =
+								'<a href="https://www.elle.co.kr/article/21547">인간 루이비통 배두나 공식 화보. ellekorea</a>';
+
+							gtag('event', '여자 결과 LOUSVUITTON', { event_category: '여자 결과' });
+							break;
+						case 'fendi':
+							resultTitle = 'FENDI 펜디';
+
+							resultimage = "<img src='img/fendi.jpg'>";
+							resultbirth =
+								'이탈리아 명품 브랜드/1925 창립/창립자: 에두아르도 펜디, 아델 카사그란데';
+
+							resultExplain =
+								'펜디는 고급스럽고 엘레강스한 이탈리아의 명품 모피 브랜드입니다. 펜디를 특별하게 만드는 것은 펜디만이 가진 고유한 디자인과 세계 최고의 품질입니다. 펜디는 제품 개발에 있어 적극적인 투자를 아끼지 않습니다.';
+
+							resultExplain2 =
+								'당신은 현실적응력이 뛰어나고 자기관리가 철저한 사람입니다. 당신의 모든 자신 있는 행동과 사고는 가능성 높은 성공 쟁취를 향하고 있습니다. 미래를 위해서 아낌없이 투자하여 성장하고 목표를 이루는 당신은 펜디의 앰버서더이자 인간 펜디입니다.';
+
+							resultSource =
+								'<a href="https://t.harpersbazaar.co.kr/article/49568">인간 펜디 한예슬 공식 화보 .harpersbazaar</a>';
+
+							gtag('event', '여자 결과 FENDI', { event_category: '여자 결과' });
+							break;
+						case 'celine':
+							resultTitle = 'CELINE 셀린느';
+
+							resultimage = "<img src='img/celine.png'>";
+							resultbirth = '프랑스 명품 브랜드/1945 설립/설립자: 셀린 비피아나';
+
+							resultExplain =
+								'셀린느는 깊은 전통과 절제된 우아함을 최고의 가치로 선보이는 프랑스의 명품 브랜드입니다. 셀린느를 더욱 특별하게 만드는 것은 차별화 된 고급 소재를 사용해 만든 셀린느의 고전적이고 아름다운 작품입니다.';
+
+							resultExplain2 =
+								'당신은 내면의 가치를 중요하게 여기며 확고한 신념과 열정을 가지고 있습니다. 언제나 목표를 향해 묵묵히 걸어가는 기품 있는 모습만으로 주변에 단단한 영향력을 미칠 수 있는 당신은 셀린느의 앰버서더이자 인간 셀린느입니다.';
+
+							resultSource =
+								'<a href="http://www.dazedkorea.com/music/article/382/detail.do" class="source">인간 셀린느 리사 공식 화보 . dazedkorea</a>';
+
+							gtag('event', '여자 결과 CELINE', { event_category: '여자 결과' });
+							break;
+						case 'ysl':
+							resultTitle = 'SAINT LAURENT 생로랑';
+							resultimage = "<img src='img/ysl.jpg'>";
+							resultbirth = '프랑스 명품 브랜드/1961 설립/설립자: 이브 생 로랑';
+
+							resultExplain =
+								'생로랑은 언제나 혁신적인 시도로 독창적인 가치를 추구합니다. 생로랑의 파격적인 행보는 패션 업계를 뛰어넘어 시대 흐름을 주도하는 독보적인 브랜드입니다.';
+
+							resultExplain2 =
+								'당신은 구속되지 않은 자유로움을 추구하고 뛰어난 상상력과 창의력을 가지고 있습니다. 고정관념에서 벗어나는 것을 두려워하지 않고 언제나 새로운 시도를 통해 앞서나가는 혁명가 기질을 가진 당신은 생로랑의 앰버서더이자 인간 생로랑입니다.';
+
+							resultSource =
+								'<a href="https://m.fashionn.com/board/read.php?table=style&number=33625" class="source">인간 생로랑 로제 공식 화보 .fashionn</a>';
+
+							gtag('event', '여자 결과 YSL', { event_category: '여자 결과' });
+							break;
+
+						default:
+							resultTitle = '알수없음';
+							resultimage = '';
+							resultbirth = '';
+							resultExplain = '';
+							resultExplain2 = '';
+							resultSource = '';
+							gtag('event', '여자 결과 알수없음', { event_category: '여자 결과' });
+					}
+				}
+
+				var title = "<div class='-MP-title'>" + resultTitle + '</div>';
+
+				var image = "<div class='-MP-image pt-2'>" + resultimage + '</div>';
+
+				var birth = "<div class='-MP-birth pt-2 pb-2'>" + resultbirth + '</div>';
+
+				var explain = "<div class='-MP-explain pt-2 pb-2'>" + resultExplain + '</div>';
+
+				var explain2 = "<div class='-MP-explain2 pt-2 pb-2'>" + resultExplain2 + '</div>';
+
+				var source = "<div class='-MP-source pt-2 pb-2'>" + resultSource + '</div>';
+
+				$('.result-message').html(title + image + birth + explain + explain2 + source);
+
+				var barWidth;
+
+				for (let i = 0; i < 3; i++) {
+					if (prediction[i].probability.toFixed(2) > 0.1) {
+						barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
+					} else if (prediction[i].probability.toFixed(2) >= 0.01) {
+						barWidth = '4%';
+					} else {
+						barWidth = '2%';
+					}
+					var labelTitle;
+					switch (prediction[i].className) {
+						case 'dior':
+							labelTitle = 'Dior';
+							break;
+						case 'gucci':
+							labelTitle = 'GUCCI';
+							break;
+						case 'prada':
+							labelTitle = 'PRADA';
+							break;
+						case 'channel':
+							labelTitle = 'CHANNEL';
+							break;
+						case 'burburrey':
+							labelTitle = 'BURBERRY';
+							break;
+						case 'lousvuitton':
+							labelTitle = 'LOUSVUITTON';
+							break;
+						case 'fendi':
+							labelTitle = 'FENDI';
+							break;
+						case 'moncler':
+							labelTitle = 'Moncler';
+							break;
+						case 'bvlgari':
+							labelTitle = 'BVLGARI';
+							break;
+						case 'celine':
+							labelTitle = 'CELINE';
+							break;
+						case 'ysl':
+							labelTitle = 'SAINTLOURENT';
+							break;
+						default:
+							labelTitle = '알수없음';
+					}
+					var label =
+						"<div class='masterpiece-label d-flex align-items-center'>" +
+						labelTitle +
+						'</div>';
+					var bar =
+						"<div class='bar-container position-relative container'><div class='" +
+						prediction[i].className +
+						"-box'></div><div class='d-flex justify-content-center align-items-center " +
+						prediction[i].className +
+						"-bar' style='width: " +
+						barWidth +
+						"'><span class='d-block percent-text'>" +
+						Math.round(prediction[i].probability.toFixed(2) * 100) +
+						'%</span></div></div>';
+					labelContainer.childNodes[i].innerHTML = label + bar;
+				}
+			}
+		</script>
+	</body>
+
+	<!-- 
 image input box
 Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -658,9 +804,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  -->
-      </html>
-
-
-
-
-   
+</html>

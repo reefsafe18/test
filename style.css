@@ -6,7 +6,6 @@ body {
 
 .file-upload {
     padding: 13% 0;
-    height: 250vw;
     border-radius: 10px;
     /* border: #343a40; */
     background-color: #343a40;
@@ -173,10 +172,25 @@ body {
    color:#20c997;
 }
 
-.linklink {
-        color:#dc3545;
-   font-size: 1.5rem;
+
+
+
+.ad-banner1{
+	width:320px;
+	margin: 0 auto;
 }
+
+.ad-banner2{
+	width:300px;
+	margin: 0 auto;
+}
+
+
+.ad-banner3{
+	width:300px;
+	margin: 0 auto;
+}
+
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
@@ -343,7 +357,7 @@ input:checked + label > .knob {
 
 .-MP-source {
     color: #fff; 
-    font-size: 0.6rem;
+    font-size: 0.9rem;
 }
 
 .source {
