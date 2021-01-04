@@ -1,0 +1,601 @@
+body {
+  font-family: sans-serif;
+  background-color: #343a40;
+}
+
+
+.file-upload {
+    padding: 13% 0;
+    height: 200vw;
+    border-radius: 10px;
+    /* border: #343a40; */
+    background-color: #343a40;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #212529;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1AA059;
+  color: #fff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.sr-only {
+    color: #343a40
+
+
+}
+
+#loading {
+  display: none;
+}
+
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+   
+.image-upload-wrap {
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 10px #35465d;
+    background-color: #ffffff;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #35465d;
+    border: 1.5px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #212529;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.navbar-distance {
+   padding: 2.1% 7.7%;
+}
+
+.navbar-light .navbar-brand{
+  font-family: NanumSquareR;
+  line-height: 1.68;
+  text-align: left;
+  color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+   border-color: #6c757d
+}
+
+.navbar-bg-light{
+       background-color: #6c757d;
+   }
+
+.section {
+   margin-top: 50px;
+}
+
+.title {
+    font-family: 'Gugi', cursive;
+     line-height: 1.67;
+     text-align: center;
+     color: #fff;
+}
+
+.subtitle {
+    font-family: 'Gugi', cursive;
+    line-height: 1.53;
+    text-align: center;
+    color: #fff;
+}
+
+.explain {
+   
+   color:#20c997;
+}
+
+.linklink {
+        color:#dc3545;
+   font-size: 1.5rem;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px
+  }
+   .navbar-brand {
+      font-size: 2rem;
+   }
+}
+
+.Afew-link{
+   color: #ffc107;
+    text-decoration: solid;
+}
+
+.Afew-link:hover{
+       color: #fd7e14;
+}
+
+.Afew-icon{
+   width: 8%;
+}
+
+.result-messege{
+       font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.youtube-link{
+  font-family: NanumSquareR;
+  font-size: 1rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+   text-decoration: underline;
+}
+
+.youtube-link:hover{
+  font-family: NanumSquareR;
+  font-size: 1rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+   text-decoration: underline;
+}
+
+.youtube-icon{
+   width: 8%;
+}
+
+.d-flex{
+   color: #20c997;
+}
+
+
+input#gender {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 41px;
+  box-shadow: 0 0 0 8px #e5e9ea inset;
+  border-radius: 30px;
+  position: relative;
+}
+
+.knob {
+  position: absolute;
+  width: 41px;
+  top: 0;
+  left: 0;
+  height: 41px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #f470a7 inset;
+  background-color: #fbd4e6;
+  transition: 0.3s;
+}
+
+input:checked + label > .knob {
+  box-shadow: 0 0 0 8px #a1c6dd inset;
+  background-color: #e2ecf4;
+  transform: translateX(49px) rotate(-140deg);
+}
+
+/* --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.result-message {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+.-MP-title {
+    color: #fff;
+	font-size: 3rem;
+}
+
+
+
+
+.-MP-birth {
+    font-size: 0.5rem;
+   color: #6c757d;
+}
+
+
+.-MP-explain {
+	font-family: 'Sunflower', sans-serif;
+    font-size: 1.5rem;
+   color: #fff;
+	border-radius: 20px;
+  border: solid 2px #35465d;
+  background-color: #343a40;
+}
+
+
+.-MP-explain2 {
+	font-family: 'Sunflower', sans-serif;
+    color: #fff; 
+    font-size: 1.5rem;
+	border-radius: 20px;
+  border: solid 2px #35465d;
+  background-color: #343a40;
+}
+
+.-MP-cname {
+    color: #fff; 
+    font-size: 1.2rem;
+}
+
+
+.-MP-source {
+    color: #fff; 
+    font-size: 0.6rem;
+}
+
+.source {
+    color: #0056b3;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+.makerlink {
+	color: #fff; 
+    font-size: 1.5rem;
+	border-radius: 10px;
+  border: solid 2px #35465d;
+  background-color: #343a40;
+	
+}
+
+.bar-container {
+  height: 2.7rem;
+}
+.burburrey-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.burburrey-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.dior-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.dior-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.gucci-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.gucci-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.prada-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.prada-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.channel-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.channel-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.lousvuitton-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.lousvuitton-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.fendi-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.fendi-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.moncler-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.moncler-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.bvlgari-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.bvlgari-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.celine-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.celine-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+.ysl-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color:#343a40;
+
+}
+.ysl-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #212529;
+}
+
+
+.percent-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.masterpiece-label {
+    width: 20%;
+    text-align: left;
+    height: 2rem;
+}
+
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.try-again-btn {
+  border-radius: 30px;
+  border: solid 1.5px #35465d;
+  background-color: #fff;
+}
+
+.try-again-text {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #212529;
+  padding: 4px 15px;
+	
+	
+	
+	
