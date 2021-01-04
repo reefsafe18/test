@@ -371,10 +371,15 @@ input:checked + label > .knob {
 	color: #fff; 
     font-size: 1.5rem;
 	border-radius: 10px;
-  border: solid 2px #35465d;
+  border: solid 10px #35465d;
   background-color: #343a40;
 	
 }
+
+
+
+
+
 
 .bar-container {
   height: 2.7rem;
