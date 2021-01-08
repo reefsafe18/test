@@ -349,21 +349,24 @@ input:checked + label > .knob {
   background-color: #343a40;
 }
 
-.-MP-cname {
-    color: #fff; 
-    font-size: 1.2rem;
-}
 
+
+.-MP-cel {
+	font-family: 'Sunflower', sans-serif;
+    color: #fff; 
+    font-size: 1.5rem;
+	border-radius: 20px;
+  border: solid 2px #35465d;
+  background-color: #343a40;
+	
+}
 
 .-MP-source {
-    color: #fff; 
-    font-size: 0.9rem;
-}
-
-.source {
     color: #0056b3;
     text-decoration: none;
     background-color: transparent;
+	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 
